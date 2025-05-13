@@ -11,8 +11,13 @@ const AllCountries = () => {
   const navigate = useNavigate();
   //console.log(selectedLanguage);
 
+
+  
+
   useEffect(() => {
-    const fetchFilteredCountries = async () => {
+
+
+       const fetchFilteredCountries = async () => {
       try {
         let url = 'https://restcountries.com/v3.1/all';
 
@@ -29,6 +34,7 @@ const AllCountries = () => {
       } catch (error) {
         console.error("Error fetching countries:", error);
         setCountries([]);
+        
       }
     };
 
@@ -42,7 +48,7 @@ const AllCountries = () => {
   return (
     <div style={{ textAlign: "center", margin: "30px 0" }}>
       <h2 style={{ 
-        fontWeight: "500", 
+       fontWeight: "500", 
         fontSize: "1.4rem", 
         color: "#333", 
         marginBottom: "15px", 
