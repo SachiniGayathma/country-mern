@@ -1,0 +1,13 @@
+@keyframes backgroundZoomIn {
+  0% {
+   background-size: 100%;
+  }
+  100% {
+    background-size: 120%;
+  }
+}
+
+.zoom-background {
+ 
+  animation: backgroundZoomIn 10s ease-in-out infinite alternate forwards;
+}
